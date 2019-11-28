@@ -1,12 +1,12 @@
-import React, {Component} from 'react';
+import React, { Component } from 'react';
 
-class PostList extends Component{
-    render(){
+class PostList extends Component {
+    render() {
         return (
             <div>
-                <h1>Posts list</h1>
+                <h1>Liste des posts</h1>
             </div>
-        )
+        );
     }
 }
 

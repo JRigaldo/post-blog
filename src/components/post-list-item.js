@@ -1,11 +1,11 @@
-import React from 'react'
+import React from 'react';
 
-export const PostListItem = (props) => {
-    return(
+const PostListItem = () => {
+    return (
         <div>
             <p>Element de la list</p>
         </div>
-    )
-}
+    );
+};
 
-export default PostListItem
+export default PostListItem;
