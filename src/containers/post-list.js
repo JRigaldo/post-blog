@@ -48,7 +48,7 @@ class PostList extends Component {
                     transitionName="fade"
                     transitionEnterTimeout = {500}
                     transitionLeaveTimeout = {300}>
-                        {this. renderPosts()}
+                        {this.renderPosts()}
                     </ReactCSSTransitionGroup>
                 </table>
             </div>

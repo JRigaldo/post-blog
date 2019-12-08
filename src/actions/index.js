@@ -27,12 +27,12 @@ export function deletePost(id){
     }
 }
 
-export function createPost(id){
+export function createPost(post){
     return function (dispatch){
         axios.post(`${END_POINT}/posts`, {
 
-            title: postMessage.title,
-            content: postMessage.content,
+            title: post.title,
+            content: post.content,
             author: post.author
             
         }).then(response => {
