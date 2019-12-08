@@ -9,10 +9,11 @@ import {browserHistory} from 'react-router';
 const formConfig = {
     form: "createPostForm",
     fields: ['title', 'content', 'author'],
-    validate: validate 
+    validate: validate,
+    initialValues: {author: 'Jeremy'}
 }
 class PostForm extends Component {
-    
+
     render() {
         const {fields : {title, content, author}, handleSubmit, errors} = this.props
         // console.log(fields)
@@ -20,7 +21,6 @@ class PostForm extends Component {
         return (
             <div>
                 <h1>Nouveau post</h1>
-
                 <form onSubmit={handleSubmit(this.createPost.bind(this))}>
                     <div className={`form-group ${title.touched && title.invalid ? 'has-danger' : ''}`}>
                         <label>Titre</label>
